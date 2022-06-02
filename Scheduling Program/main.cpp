@@ -91,7 +91,7 @@ int main(int argc, const char * argv[]) {
     while(count < nofCourses)
     {
         cin>>courseName;
-        count++;
+        count = count+1;
     }
     
     cout << endl;
