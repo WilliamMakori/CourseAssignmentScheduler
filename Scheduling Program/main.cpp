@@ -12,9 +12,11 @@ using namespace std;
 
 class AssignmentPlanner{
 public:
+    
     string courseName;
     int numberOfUnits;
     int numberOfAssignments;
+    
 private:
     //MARK: Constructors
     AssignmentPlanner(const string cName){
@@ -52,10 +54,10 @@ private:
 //These should be non-member functions, if they're member functions then they should be made as friend functions
 //MARK: Overloaded operators for the class.
 
-ostream& operator << (ostream &out, AssignmentPlanner const& data) {
-    out << "Course name: "<< data.courseName << endl;
-    out <<"Number of units obtained upon successful completion of the course"<< data.numberOfUnits << endl;
-    out << "Number of assignments that need to be completed by the course"<< data.numberOfUnits << endl;
+ostream& operator << (ostream &out, AssignmentPlanner const& course) {
+    out << "Course name: "<< course.courseName << endl;
+    out <<"Number of units obtained upon successful completion"<< course.numberOfUnits << endl;
+    out << "Number of assignments that need to be completed by the course"<< course.numberOfUnits << endl;
     return out;
 }
 
@@ -101,7 +103,7 @@ int main(int argc, const char * argv[]) {
    //Create a data structure with a key value pair that says how many assignments you've got and the name of the course.
     
     
-    //system("Pause");
+    
     
     return 0;
 }
