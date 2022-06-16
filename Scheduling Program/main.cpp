@@ -103,6 +103,7 @@ int main(int argc, const char * argv[]) {
    //Create a data structure with a key value pair that says how many assignments you've got and the name of the course.
     
     
+    cout << "My name is Makori, and I am the developer behind this project" << endl;
     
     
     return 0;
